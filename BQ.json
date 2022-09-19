@@ -1,0 +1,67 @@
+{
+    "data": [{
+        "type": "fulfilment",
+        "id": "3663602943280",
+        "attributes": {
+            "ean": "3663602943280",
+            "homeDelivery": {
+                "shippingMethod": {
+                    "availability": "NotAvailable",
+                    "shortMessage": "Unavailable"
+                },
+                "shippingMethodType": "HomeDelivery"
+            },
+            "clickAndCollectStorePick": {
+                "availability": "NotAvailable"
+            },
+            "clickAndCollectWarehousePick": {
+                "availability": "NotAvailable",
+                "shortMessage": "Unavailable",
+                "longMessage": "Unavailable",
+                "locationSpecific": true,
+                "leadTime": "1"
+            },
+            "inStore": {
+                "availability": "NotStockable",
+                "quantity": 13,
+                "location": {
+                    "aisle": "58",
+                    "bay": "9"
+                },
+                "locationSpecific": true
+            }
+        },
+        "relationships": {
+            "store": {
+                "data": {
+                    "id": "1364",
+                    "type": "store"
+                }
+            }
+        }
+    }],
+    "meta": {
+        "warnings": [{
+            "status": "404",
+            "code": "NOT-FOUND",
+            "title": "EAN not found",
+            "detail": "The EAN 3663602943280 is not found",
+            "source": {
+                "parameter": "filter[ean]"
+            }
+        }]
+    },
+    "included": [{
+        "type": "store",
+        "id": "1364",
+        "attributes": {
+            "name": "B&Q Inverness",
+            "storeType": "Mini-Warehouse",
+            "clickAndCollect": {
+                "sameDay": true,
+                "nextDay": true,
+                "trainingReadyStore": false
+            }
+        }
+    }]
+}
